@@ -13,7 +13,7 @@ import { Button } from "@nextui-org/button";
 
 export default function IndexPage() {
   const [address, setAddress] = useState(""); // 存储用户输入的地址
-  const [transactions, setTransactions] = useState([]);
+  const [transactions, setTransactions] = useState<any[]>([]);
   const [loading, setLoading] = useState(false);
   const [progress, setProgress] = useState(0); // 进度条百分比
   const [isMonitoring, setIsMonitoring] = useState(false); // 控制是否显示倒计时
@@ -40,7 +40,7 @@ export default function IndexPage() {
   };
 
   useEffect(() => {
-    let intervalId;
+    let intervalId:NodeJS.Timeout | undefined;
     if (isMonitoring) {
       let progressValue = 0;
       intervalId = setInterval(() => {
@@ -121,7 +121,7 @@ export default function IndexPage() {
 
       {isMonitoring && (
         <section className="flex mb-3 flex-col items-center justify-center">
-          <Progress className="w-2/3" value={progress} max={100} aria-label="Monitoring..." color="secondary"/>
+          <Progress className="w-2/3" value={progress} aria-label="Monitoring..." color="secondary"/>
           {/* <p>{5 - progress / 20} seconds remaining...</p> */}
         </section>
       )}
