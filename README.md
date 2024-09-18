@@ -5,7 +5,7 @@
 </p>
 
 > A front-end Tron chain transaction monitoring written in react+NextUI
-> ![1726688473835.png](https://www.helloimg.com/i/2024/09/19/66eb2b762cb8f.png)
+> ![1726688473835.png](./image.png)
 
 ## Install
 
