@@ -7,6 +7,10 @@
 > A front-end Tron chain transaction monitoring written in react+NextUI+next.js
 > ![1726688473835.png](./image.png)
 
+## Live Demo
+
+link: [https://tronspan.netlify.app/](https://tronspan.netlify.app/)
+
 ## Install
 
 ```sh
